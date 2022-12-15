@@ -13,7 +13,7 @@ Apache License Version 2.0
 2. IDE: VS Code(Symfony Extension Pack, TWIG pack-Bajdzis)
 3. Database: MySQL 5.7+
 
-[![Current Version: v6.2](https://github.com/tdtc-hrb/veic-web_sf/blob/master/docs/sf_version.svg)](https://symfony.com/releases)
+[![Current Version: v6.2](https://github.com/tdtc-hrb/veic-web_sf/blob/main/docs/sf_version.svg)](https://symfony.com/releases)
 
 ## the project structure
 
