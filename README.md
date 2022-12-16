@@ -19,7 +19,7 @@ Apache License Version 2.0
 
 your-project/    
 ├─ assets/    
-├─ bin/   
+├─ bin/    
 │  └─ console    
 ├─ config/    
 ├─ public/    
