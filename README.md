@@ -64,14 +64,14 @@ enable tls:
 
 allow script:
 ```ps
-Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 ### install scoop
 
 setup [scoop](https://scoop.sh/):
 ```ps
-iwr -useb get.scoop.sh | iex
+irm get.scoop.sh -Proxy 'http://<ip:port>' | iex
 ```
 
 ### install [Symfony CLI](https://symfony.com/download)
