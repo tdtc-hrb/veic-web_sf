@@ -3,15 +3,15 @@ veic_web with symfony
 Veic Corporation is web site
 
 ```
-Copyright (c) 2022 Harbin TDTC Technology Development Co., Ltd.
+Copyright (c) 2023 Harbin TDTC Technology Development Co., Ltd.
 
 Apache License Version 2.0
 ```
 
 # the development environment
-1. The language: PHP8.1+
+1. The language: PHP8.2+
 2. IDE: VS Code(Symfony Extension Pack, TWIG pack-Bajdzis)
-3. Database: MySQL 5.7+
+3. Database: MySQL 8.0+
 
 [![Current Version: v6.2](https://github.com/tdtc-hrb/veic-web_sf/blob/main/docs/sf_version.svg)](https://symfony.com/releases)
 - v6.4(LTS)    
