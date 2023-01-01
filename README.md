@@ -91,7 +91,7 @@ scoop update symfony-cli
 ```bash
 cd veic_web_sf
 composer update
-yarn upgrade
+yarn upgrade --network-timeout 30000000
 ```
 
 ### ui(css+js)
