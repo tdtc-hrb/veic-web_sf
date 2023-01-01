@@ -51,6 +51,17 @@ your-project/
 ## install yarn
 ```
 npm install --global yarn
+yarn set version berry
+```
+
+### [cli commands](https://yarnpkg.com/getting-started/migration#cli-commands)
+V1:
+```
+yarn upgrade
+```
+V2:
+```
+yarn up
 ```
 
 
@@ -91,7 +102,7 @@ scoop update symfony-cli
 ```bash
 cd veic_web_sf
 composer update
-yarn upgrade --network-timeout 30000000
+yarn up
 ```
 
 ### ui(css+js)
