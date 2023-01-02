@@ -47,10 +47,18 @@ your-project/
 
 
 # run
+set proxy:
+```ps
+set http_proxy='http://<ip:port>'
+set https_proxy='http://<ip:port>'
+```
 
 ## install yarn
 ```
 npm install --global yarn
+```
+using V2:
+```
 yarn set version berry
 ```
 
@@ -80,7 +88,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ### install scoop
 
-setup [scoop](https://scoop.sh/):
+Before installing [scoop](https://scoop.sh/), set the proxy first:
 ```ps
 irm get.scoop.sh -Proxy 'http://<ip:port>' | iex
 ```
@@ -98,7 +106,7 @@ scoop update symfony-cli
 
 
 ## launch
-
+Before upgrading, set the proxy first：
 ```bash
 cd veic_web_sf
 composer update
