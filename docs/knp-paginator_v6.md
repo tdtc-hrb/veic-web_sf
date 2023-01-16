@@ -5,10 +5,10 @@ usage knp-paginator
 
 install:
 ```
-composer require knplabs/knp-paginator-bundle:6.1.0
+composer require knplabs/knp-paginator-bundle:6.1.1
 ```
 
-[当前版本 - v6.0.1](https://github.com/KnpLabs/KnpPaginatorBundle/releases/tag/v6.1.0)
+[当前版本 - v6.1.1](https://github.com/KnpLabs/KnpPaginatorBundle/releases/tag/v6.1.1)
 
 # controller
 
