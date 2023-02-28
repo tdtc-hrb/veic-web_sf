@@ -90,7 +90,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Before installing [scoop](https://scoop.sh/), set the proxy first:
 ```ps
-irm get.scoop.sh -Proxy http://192.168.1.11:8580 | iex
+set all_proxy=http://127.0.0.1:8580
+irm get.scoop.sh -Proxy | iex
 ```
 
 ### install [Symfony CLI](https://symfony.com/download)
