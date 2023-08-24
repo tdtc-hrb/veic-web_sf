@@ -9,11 +9,13 @@ Apache License Version 2.0
 ```
 
 # the development environment
-1. The language: [PHP8.1+](https://symfony.com/releases/6.4)
+1. The language: PHP8.1+
 2. IDE: VS Code(Symfony Extension Pack, TWIG pack-Bajdzis)
 3. Database: MySQL 8.0+
 
-[![Current Version: v6.2](https://github.com/tdtc-hrb/veic-web_sf/blob/main/docs/sf_version.svg)](https://symfony.com/releases)
+[![Current Version: v6.3](https://github.com/tdtc-hrb/veic-web_sf/blob/main/docs/sf_version.svg)](https://symfony.com/releases)
+- v6.4(LTS)    
+Dec 1, 2023
 
 ## the project structure
 
@@ -45,7 +47,7 @@ your-project/
 
 
 # run
-set proxy:
+set proxy - Windows:
 ```bash
 set http_proxy='http://<ip:port>'
 set https_proxy='http://<ip:port>'
