@@ -8,14 +8,15 @@ Copyright (c) 2023 Harbin TDTC Technology Development Co., Ltd.
 Apache License Version 2.0
 ```
 
-# the development environment
-1. The language: PHP8.1+
-2. IDE: VS Code(Symfony Extension Pack, TWIG pack-Bajdzis)
-3. Database: MySQL 8.0+
-
+- PHP8.1+
+- IDE    
+VS Code(Symfony Extension Pack, TWIG pack-Bajdzis)
+- symfony    
 [![Current Version: v6.3](https://github.com/tdtc-hrb/veic-web_sf/blob/main/docs/sf_version.svg)](https://symfony.com/releases)
-- v6.4(LTS)    
+```
+v6.4(LTS)
 Dec 1, 2023
+```
 
 ## the project structure
 
@@ -46,23 +47,22 @@ your-project/
 
 
 
-# run
-set proxy - Windows:
-```bash
-set http_proxy='http://<ip:port>'
-set https_proxy='http://<ip:port>'
-```
-
 ## install yarn
 ```bash
 npm install --global yarn
 ```
-using V2:
+### using V2
+- set proxy
+```bash
+yarn config set proxy http://<ip:port>
+yarn config set https-proxy http://<ip:port>
+```
+- switch version
 ```bash
 yarn set version berry
 ```
 
-### [cli commands](https://yarnpkg.com/getting-started/migration#cli-commands)
+### yarn update
 V1:
 ```
 yarn upgrade
@@ -80,6 +80,10 @@ composer update
 yarn up
 ```
 
+### offline
+same version:    
+copy ".yarn" and "vendor" to the root directory.
+
 ### ui(css+js)
 ```bash
 yarn encore dev --watch
@@ -88,7 +92,7 @@ yarn encore dev --watch
 ### web server
 down [Symfony CLI](https://github.com/symfony-cli/symfony-cli/releases) set path.
 
-install cert:
+install cert(option):
 ```bash
 symfony server:ca:install
 ```
