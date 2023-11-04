@@ -16,6 +16,59 @@ v8.0+:
 #[Route('/product', name: 'product')]
 ```
 
+### [readonly](https://php.watch/versions/8.1/readonly)
+[sf v6.4+](https://github.com/symfony/symfony/compare/v6.3.6...v6.4.0-BETA1) 大量代码使用
+```
+readonly <type> <variable name>
+```
+改写.
+
+PHP 8.1 brings support for read-only class properties. 
+A class property declared read-only is only allowed to be initialized once, 
+and further changes to the property is not allowed.
+
+Read-only class properties are declared with the readonly keyword* in a [typed property](https://php.watch/versions/7.4/typed-properties).
+```
+class User {
+    public readonly int $uid;
+
+    public function __construct(int $uid) {
+        $this->uid = $uid;
+    }
+}
+
+$user = new User(42);
+```
+
+### [constructor promotion](https://php.watch/versions/8.0/constructor-property-promotion)
+> Note!!!: Only constructor supports property promotion
+```
+class User {
+    public function setUser(public string $name) {}
+}
+```
+```
+Fatal error: Cannot declare promoted property outside a constructor in ... on line ...
+```
+
+使用 “构造器属性提升” 可以 精简 初始代码。
+- standard properties
+```
+class User {
+    private string $name;
+    public function __construct(string $name) {
+        $this->name = $name;
+    }
+}
+```
+- promotion properties
+```
+class User {
+   public function __construct(private string $name) {
+   }
+}
+```
+
 
 ## twig
 [is_safe - twif](https://ourcodeworld.com/articles/read/1416/how-to-prevent-a-custom-twig-function-from-escaping-the-output-in-symfony-5)
