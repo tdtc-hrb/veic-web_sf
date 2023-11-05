@@ -12,11 +12,7 @@ Apache License Version 2.0
 - IDE    
 VS Code(Symfony Extension Pack, TWIG pack-Bajdzis)
 - symfony    
-[![Current Version: v6.3](https://github.com/tdtc-hrb/veic-web_sf/blob/main/docs/sf_version.svg)](https://symfony.com/releases)
-```
-v6.4(LTS)
-Dec 1, 2023
-```
+[![Current Version: v6.4](https://github.com/tdtc-hrb/veic-web_sf/blob/main/docs/sf_version.svg)](https://symfony.com/releases)
 
 ## the project structure
 
