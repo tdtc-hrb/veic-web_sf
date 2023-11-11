@@ -2,10 +2,15 @@
     "devDependencies": {
         "@babel/core": "^7.17.0",
         "@babel/preset-env": "^7.16.0",
+        "@popperjs/core": "^2.11.8",
         "@symfony/webpack-encore": "^4.0.0",
+        "@types/express": "^4.17.21",
+        "bootstrap": "^5.3.2",
         "core-js": "^3.23.0",
+        "jquery": "^3.7.1",
         "regenerator-runtime": "^0.13.9",
-        "webpack": "^5.74.0",
+        "sass": "^1.69.5",
+        "webpack": "^5.89.0",
         "webpack-cli": "^4.10.0",
         "webpack-notifier": "^1.15.0"
     },
@@ -17,5 +22,8 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
-    "packageManager": "yarn@4.0.1"
+    "packageManager": "yarn@4.0.1",
+    "dependencies": {
+        "sass-loader": "^13.3.2"
+    }
 }
