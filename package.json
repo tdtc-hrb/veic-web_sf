@@ -22,7 +22,6 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
-    "packageManager": "yarn@4.0.1",
     "dependencies": {
         "sass-loader": "^13.3.2"
     }
