@@ -85,15 +85,15 @@ copy ".yarn" and "vendor" to the root directory.
 yarn encore dev --watch
 ```
 
-### web server
-down [Symfony CLI](https://github.com/symfony-cli/symfony-cli/releases) set path.
-
-install cert(option):
-```bash
-symfony server:ca:install
-```
-
-start server:
+### run
+[start server](https://github.com/symfony-cli/symfony-cli/releases):
 ```bash
 symfony server:start
 ```
+- [abuot](http://127.0.0.1:8000/about)
+- [article](http://127.0.0.1:8000/article)
+- [company](http://127.0.0.1:8000/company)
+- [contact](http://127.0.0.1:8000/contact)
+- [home](http://127.0.0.1:8000/home)
+- [page](http://127.0.0.1:8000/page)
+- [product](http://127.0.0.1:8000/product)
