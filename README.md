@@ -90,8 +90,8 @@ yarn encore dev --watch
 ```bash
 symfony server:start
 ```
-![hello](https://github.com/tdtc-hrb/veic-web_sf/blob/v6.4/public/img/hello_screenshot.png)
 - [abuot](http://127.0.0.1:8000/about)
+![hello](https://github.com/tdtc-hrb/veic-web_sf/blob/v6.4/public/img/hello_screenshot.png)
 - [article](http://127.0.0.1:8000/article)
 - [company](http://127.0.0.1:8000/company)
 - [contact](http://127.0.0.1:8000/contact)
