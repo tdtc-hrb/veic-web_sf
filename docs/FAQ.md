@@ -142,6 +142,11 @@ New property name (press <return> to stop adding fields):
 
 ## Bundles
 
+### assert-mapper, stimulus-bundle and ux-turbo
+```
+composer remove symfony/asset-mapper symfony/ux-turbo symfony/stimulus-bundle
+```
+
 ### [移除sensio/framework-extra-bundle](https://symfony.com/blog/new-in-symfony-6-2-built-in-cache-security-template-and-doctrine-attributes)
 [remove component](https://stackoverflow.com/questions/74685374/package-sensio-framework-extra-bundle-is-abandoned)
 ```bash
