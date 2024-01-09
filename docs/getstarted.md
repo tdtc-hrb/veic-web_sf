@@ -38,11 +38,19 @@ install default component:
 composer require webapp
 ```
 
-### other bundle
-- webpack-encore-bundle
+### [Front-end Tools: Handling CSS & JavaScript](https://symfony.com/doc/6.4/frontend.html)
+选择下面两个的其中一个：    
+Choose one of the following two:
+- Encore
 ```
 composer require symfony/webpack-encore-bundle
 ```
+Webpack Encore is built with Node.js on top of Webpack.
+- AssetMapper
+AssetMapper (recommended for new projects) runs entirely in PHP, 
+doesn't require any build step and leverages modern web standards.
+
+### other bundle
 - knp-paginator-bundle
 default:
 ```
