@@ -46,7 +46,14 @@ Choose one of the following two:
 composer require symfony/webpack-encore-bundle
 ```
 Webpack Encore is built with Node.js on top of Webpack.
-- AssetMapper
+
+remove AM:
+```
+composer remove symfony/asset-mapper
+composer remove symfony/stimulus-bundle
+composer remove symfony/ux-turbo
+```
+- AssetMapper    
 AssetMapper (recommended for new projects) runs entirely in PHP, 
 doesn't require any build step and leverages modern web standards.
 
