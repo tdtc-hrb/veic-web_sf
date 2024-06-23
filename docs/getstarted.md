@@ -87,8 +87,8 @@ Webpack Encore is built with Node.js on top of Webpack.
 remove AM:
 ```
 composer remove symfony/asset-mapper
-composer remove symfony/stimulus-bundle
 composer remove symfony/ux-turbo
+composer remove symfony/stimulus-bundle
 ```
 - AssetMapper    
 AssetMapper (recommended for new projects) runs entirely in PHP, 
@@ -102,14 +102,23 @@ composer require knplabs/knp-paginator-bundle
 ```
 specific:
 ```
-composer require knplabs/knp-paginator-bundle:6.3.0
+composer require knplabs/knp-paginator-bundle:6.4.0
 ```
 - maker
 ```ps
 composer require --dev symfony/maker-bundle
 ```
 
-## step 2: Homepage
+## step 2: manage project
+- Homepage
+- Product
+- Company
+- About
+- Article
+- Contact
+- Sidebar
+
+### Homepage
 - Controller
 ```ps
 php bin/console make:controller HomeController
@@ -123,7 +132,7 @@ php bin/console make:entity Navigation
 php bin/console make:entity Glossary
 ```
 
-## step 3: Product
+### Product
 - Controller
 ```ps
 php bin/console make:controller ProductController
@@ -150,7 +159,7 @@ php bin/console make:entity Statu
 php bin/console make:entity Image
 ```
 
-## step 4: Company
+### Company
 - Controller
 ```ps
 php bin/console make:controller CompanyController
@@ -166,7 +175,7 @@ php bin/console make:entity Type
 ```
 
 
-## step 5: About
+### About
 - Controller
 ```ps
 php bin/console make:controller AboutController
@@ -177,7 +186,7 @@ php bin/console make:controller AboutController
 php bin/console make:entity Qualification
 ```
 
-## step 6: Article
+### Article
 - Controller
 ```ps
 php bin/console make:controller ArticleController
@@ -188,7 +197,7 @@ add profile template.
 profile.html.twig
 ```
 
-## step 7: Contact
+### Contact
 - Controller
 ```ps
 php bin/console make:controller ContactController
@@ -199,7 +208,7 @@ php bin/console make:controller ContactController
 php bin/console make:entity Contact
 ```
 
-## step 8: Sidebar
+### Sidebar
 - Controller
 ```ps
 php bin/console make:controller PageController
@@ -213,9 +222,8 @@ php bin/console make:controller PageController
 更改下面的默认配置
 
 ## Routing
-
-### [prefix](https://symfony.com/doc/6.4/routing.html#route-groups-and-prefixes)
 - [attribute](https://symfony.com/doc/6.4/routing.html#creating-routes-as-attributes)
+### [prefix](https://symfony.com/doc/6.4/routing.html#route-groups-and-prefixes)
 > routes/attributes.yaml
 ```xml
 controllers:
