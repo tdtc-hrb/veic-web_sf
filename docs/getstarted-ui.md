@@ -1,6 +1,7 @@
 UI
 ====
-- Installation
+- Installation    
+install [npm](https://tdtc-hrb.github.io/csdn/post/nodejs-ubuntu/)
 - disables the Symfony UX Stimulus bridge
 - Enabled Sass
 - usage jquery
