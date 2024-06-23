@@ -45,17 +45,17 @@ your-project/
 
 ## install yarn
 ```bash
-npm install --global yarn
+sudo npm install --global yarn
 ```
 ### using V2
 - set proxy
 ```bash
-yarn config set proxy http://<ip:port>
-yarn config set https-proxy http://<ip:port>
+sudo yarn config set proxy http://<ip:port>
+sudo yarn config set https-proxy http://<ip:port>
 ```
 - switch version
 ```bash
-yarn set version berry
+sudo yarn set version berry
 ```
 
 ### yarn update
