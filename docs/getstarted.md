@@ -42,69 +42,49 @@ sudo rm composer-setup.php
 ## php-xml
 Q: symfony/framework-bundle[v6.4.0, ..., v6.4.8] require ext-xml * -> it is missing from your system. Install or enable PHP's xml extension
 
-A:[How To Install php-xml on Ubuntu 22.04](https://installati.one/install-php-xml-ubuntu-22-04/)
+A: [How To Install php-xml on Ubuntu 22.04](https://installati.one/install-php-xml-ubuntu-22-04/)
 ```
 sudo apt -y install php-xml
 ```
 
 
 # step by step
-PROJECT_DIR:
-```
-veic-web_sf
-```
-
-## step 0: create project
-- lts
+create:
 ```bash
 composer create-project symfony/skeleton:"^6.4" veic-web_sf
 ```
-- current
-```bash
-composer create-project symfony/skeleton veic-web_sf
-```
 
 ## step 1: manage component
-enter project directory:
-```
-cd veic-web_sf
-```
-
-install default component:
+webapp:
 ```bash
+cd veic-web_sf
 composer require webapp
 ```
 
 ### [Front-end Tools: Handling CSS & JavaScript](https://symfony.com/doc/6.4/frontend.html)
-选择下面两个的其中一个：    
-Choose one of the following two:
+- AssetMapper
+> recommended for new projects
+
 - Encore
 ```
 composer require symfony/webpack-encore-bundle
 ```
 Webpack Encore is built with Node.js on top of Webpack.
 
-remove AM:
+remove AssetMapper:
 ```
-composer remove symfony/asset-mapper
 composer remove symfony/ux-turbo
 composer remove symfony/stimulus-bundle
+composer remove symfony/asset-mapper
 ```
-- AssetMapper    
-AssetMapper (recommended for new projects) runs entirely in PHP, 
-doesn't require any build step and leverages modern web standards.
 
 ### other bundle
 - knp-paginator-bundle
-default:
-```
-composer require knplabs/knp-paginator-bundle
-```
-specific:
+> specific
 ```
 composer require knplabs/knp-paginator-bundle:6.4.0
 ```
-- maker
+- update maker
 ```ps
 composer require --dev symfony/maker-bundle
 ```
@@ -215,10 +195,7 @@ php bin/console make:controller PageController
 ```
 
 
-
-
-
-# config
+## step 3: config project
 更改下面的默认配置
 
 ## Routing
@@ -236,9 +213,8 @@ controllers:
 ```
 
 ## [doctrine](https://symfony.com/doc/6.4/doctrine.html)
-> config/packages/doctrine.yaml
-
-### [support boolean type](https://stackoverflow.com/questions/9744629/doctrine2-workaround-for-mapping-mysql-bit-data-type)
+- [support boolean type](https://stackoverflow.com/questions/9744629/doctrine2-workaround-for-mapping-mysql-bit-data-type)    
+config/packages/doctrine.yaml:
 ```
 doctrine:
     dbal:
