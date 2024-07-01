@@ -62,8 +62,14 @@ composer require webapp
 ```
 
 ### [Front-end Tools: Handling CSS & JavaScript](https://symfony.com/doc/6.4/frontend.html)
-- AssetMapper
-> recommended for new projects
+- Asset Mapper
+> 推荐在v8.4版本后，使用 AssetMapper
+remove:
+```
+composer remove symfony/ux-turbo
+composer remove symfony/stimulus-bundle
+composer remove symfony/asset-mapper
+```
 
 - Encore
 ```
@@ -71,12 +77,6 @@ composer require symfony/webpack-encore-bundle
 ```
 Webpack Encore is built with Node.js on top of Webpack.
 
-remove AssetMapper:
-```
-composer remove symfony/ux-turbo
-composer remove symfony/stimulus-bundle
-composer remove symfony/asset-mapper
-```
 
 ### other bundle
 - knp-paginator-bundle
