@@ -9,8 +9,8 @@
         "core-js": "^3.23.0",
         "jquery": "^3.7.1",
         "regenerator-runtime": "^0.13.9",
-        "sass": "^1.77.6",
-        "webpack": "^5.92.1",
+        "sass": "^1.77.8",
+        "webpack": "^5.93.0",
         "webpack-cli": "^4.10.0",
         "webpack-notifier": "^1.15.0"
     },
@@ -22,7 +22,6 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
-    "packageManager": "yarn@4.3.1",
     "dependencies": {
         "sass-loader": "^14.2.1"
     }
