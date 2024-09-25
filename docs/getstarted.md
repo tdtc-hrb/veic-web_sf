@@ -82,7 +82,7 @@ Webpack Encore is built with Node.js on top of Webpack.
 - knp-paginator-bundle
 > specific
 ```
-composer require knplabs/knp-paginator-bundle:6.4.0
+composer require knplabs/knp-paginator-bundle:6.5.0
 ```
 - update maker
 ```ps
