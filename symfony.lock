@@ -1,6 +1,6 @@
 {
     "doctrine/doctrine-bundle": {
-        "version": "2.12",
+        "version": "2.13",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
@@ -27,7 +27,7 @@
         ]
     },
     "knplabs/knp-paginator-bundle": {
-        "version": "v6.4.0"
+        "version": "v6.5.0"
     },
     "phpunit/phpunit": {
         "version": "9.6",
@@ -85,7 +85,7 @@
             "repo": "github.com/symfony/recipes",
             "branch": "main",
             "version": "6.4",
-            "ref": "a91c965766ad3ff2ae15981801643330eb42b6a5"
+            "ref": "32126346f25e1cee607cc4aa6783d46034920554"
         },
         "files": [
             "./config/packages/cache.yaml",
@@ -111,7 +111,7 @@
         ]
     },
     "symfony/maker-bundle": {
-        "version": "1.60",
+        "version": "1.61",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
@@ -264,6 +264,6 @@
         ]
     },
     "twig/extra-bundle": {
-        "version": "v3.10.0"
+        "version": "v3.13.0"
     }
 }
