@@ -5,10 +5,8 @@ Begin build on Symfony
 # Prepare
 - Composer
 - php-xml
-- [Symfony Cli](https://symfony.com/download)
-```ps
-symfony check:requirements
-```
+- Symfony Cli
+
 
 ## [Installing composer in Linux](https://www.transip.eu/knowledgebase/entry/3300-installing-composer-in-linux/)
 In addition to the basics that come with installing PHP, 
@@ -51,6 +49,17 @@ Q: symfony/framework-bundle[v6.4.0, ..., v6.4.8] require ext-xml * -> it is miss
 A: [How To Install php-xml on Ubuntu 22.04](https://installati.one/install-php-xml-ubuntu-22-04/)
 ```
 sudo apt -y install php-xml
+```
+
+## [Symfony CLI](https://symfony.com/download)
+```
+curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash
+
+sudo apt install symfony-cli
+```
+- check
+```
+symfony check:requirements
 ```
 
 
