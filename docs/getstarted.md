@@ -5,10 +5,8 @@ Begin build on Symfony
 # Prepare
 - Composer
 - php-xml
-- [Symfony Cli](https://symfony.com/download)
-```ps
-symfony check:requirements
-```
+- Symfony Cli
+
 
 ## [Installing composer in Linux](https://www.transip.eu/knowledgebase/entry/3300-installing-composer-in-linux/)
 In addition to the basics that come with installing PHP, 
@@ -21,15 +19,6 @@ Download the composer installer with the command:
 ```
 sudo php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 ```
-Check the integrity of the script with the commands:
-```
-HASH="$(wget -q -O - https://composer.github.io/installer.sig)"
-sudo php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-```
-You get the following output if everything went well, if not, download the installation script again:
-```
-Installer verified
-```
 Finally, install Composer in the /usr/local/bin directory (so it is available to all users) with the command:
 ```
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
@@ -39,12 +28,48 @@ After installation, you can remove the installer with the command:
 sudo rm composer-setup.php
 ```
 
+### specific php version
+According to the latest version:
+```
+sudo add-apt-repository ppa:ondrej/php # Press enter when prompted.
+sudo apt update
+```
+specifically choose the [PHP version](https://askubuntu.com/questions/1373755/how-to-change-php-version-in-ubuntu-20-04-console):
+```
+sudo update-alternatives --set php /usr/bin/php8.3
+```
+Set the version to use [php8.3](https://php.watch/articles/install-php82-ubuntu-debian):
+```
+sudo apt install php8.3-cli php8.3-{zip,curl,mbstring,intl}
+```
+
 ## php-xml
 Q: symfony/framework-bundle[v6.4.0, ..., v6.4.8] require ext-xml * -> it is missing from your system. Install or enable PHP's xml extension
 
 A: [How To Install php-xml on Ubuntu 22.04](https://installati.one/install-php-xml-ubuntu-22-04/)
 ```
 sudo apt -y install php-xml
+```
+
+## [Symfony CLI](https://symfony.com/download)
+```
+curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash
+
+sudo apt install symfony-cli
+```
+- checker
+```
+symfony check:requirements
+```
+
+### [modules](https://computingforgeeks.com/how-to-install-php-8-2-on-ubuntu/)
+- list
+```
+php -m
+```
+- add
+```
+sudo apt install php8.3-pdo-mysql
 ```
 
 
@@ -82,7 +107,7 @@ Webpack Encore is built with Node.js on top of Webpack.
 - knp-paginator-bundle
 > specific
 ```
-composer require knplabs/knp-paginator-bundle:6.5.0
+composer require knplabs/knp-paginator-bundle:6.6.1
 ```
 - update maker
 ```ps
