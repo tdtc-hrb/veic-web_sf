@@ -21,15 +21,6 @@ Download the composer installer with the command:
 ```
 sudo php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 ```
-Check the integrity of the script with the commands:
-```
-HASH="$(wget -q -O - https://composer.github.io/installer.sig)"
-sudo php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-```
-You get the following output if everything went well, if not, download the installation script again:
-```
-Installer verified
-```
 Finally, install Composer in the /usr/local/bin directory (so it is available to all users) with the command:
 ```
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
@@ -37,6 +28,21 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 After installation, you can remove the installer with the command:
 ```
 sudo rm composer-setup.php
+```
+
+### specific php version
+According to the latest version:
+```
+sudo add-apt-repository ppa:ondrej/php # Press enter when prompted.
+sudo apt update
+```
+Set the version to use [php8.3](https://php.watch/articles/install-php82-ubuntu-debian):
+```
+sudo apt install php8.3-cli php8.3-{zip,curl,mbstring,intl}
+```
+specifically choose the [PHP version](https://askubuntu.com/questions/1373755/how-to-change-php-version-in-ubuntu-20-04-console):
+```
+sudo update-alternatives --set php /usr/bin/php8.3
 ```
 
 ## php-xml
@@ -82,7 +88,7 @@ Webpack Encore is built with Node.js on top of Webpack.
 - knp-paginator-bundle
 > specific
 ```
-composer require knplabs/knp-paginator-bundle:6.5.0
+composer require knplabs/knp-paginator-bundle:6.6.1
 ```
 - update maker
 ```ps
