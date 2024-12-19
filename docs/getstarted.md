@@ -34,13 +34,13 @@ According to the latest version:
 sudo add-apt-repository ppa:ondrej/php # Press enter when prompted.
 sudo apt update
 ```
-Set the version to use [php8.3](https://php.watch/articles/install-php82-ubuntu-debian):
-```
-sudo apt install php8.3-cli php8.3-{zip,curl,mbstring,intl}
-```
 specifically choose the [PHP version](https://askubuntu.com/questions/1373755/how-to-change-php-version-in-ubuntu-20-04-console):
 ```
 sudo update-alternatives --set php /usr/bin/php8.3
+```
+Set the version to use [php8.3](https://php.watch/articles/install-php82-ubuntu-debian):
+```
+sudo apt install php8.3-cli php8.3-{zip,curl,mbstring,intl}
 ```
 
 ## php-xml
@@ -57,9 +57,19 @@ curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo 
 
 sudo apt install symfony-cli
 ```
-- check
+- checker
 ```
 symfony check:requirements
+```
+
+### [modules](https://computingforgeeks.com/how-to-install-php-8-2-on-ubuntu/)
+- list
+```
+php -m
+```
+- add
+```
+sudo apt install php8.3-pdo-mysql
 ```
 
 
