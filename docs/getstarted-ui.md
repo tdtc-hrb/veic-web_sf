@@ -10,14 +10,25 @@ install [npm](https://tdtc-hrb.github.io/csdn/post/nodejs-ubuntu/)
 > 如果没有 [yarn.lock](https://github.com/yarnpkg/berry/issues/2212) 文件, 
 >> 在工程根目录新建一个.
 
+- babel
+```
+yarn add @babel/core --dev
+yarn add @babel/preset-env --dev
+```
+
 - sass    
 管理 JQuery && Bootstrap
 
 - webpack
 ```
 yarn add webpack --dev
+yarn add webpack-cli --dev
+yarn add webpack-notifier --dev
 ```
-SF v6.2以上是升级.
+```
+yarn add @symfony/webpack-encore --dev
+```
+
 
 ### Sass
 ```
