@@ -83,7 +83,7 @@ sudo apt install php8.3-pdo-pgsql
 
 ### [more lib](https://php.watch/articles/install-php82-ubuntu-debian)
 ```
-sudo apt install php-{mbstring,intl}
+sudo apt install php-{curl,mbstring,intl}
 ```
 
 
