@@ -1,36 +1,36 @@
 UI
 ====
-- Installation    
-install [npm](https://tdtc-hrb.github.io/csdn/post/nodejs-ubuntu/)
 - disables the Symfony UX Stimulus bridge
 - Enabled Sass
 - usage jquery
 
-## Installation
-> 如果没有 [yarn.lock](https://github.com/yarnpkg/berry/issues/2212) 文件, 
->> 在工程根目录新建一个.
+## Preparation
+注意:  !!! at yarn V2 !!!
+```
+ 如果没有 [yarn.lock](https://github.com/yarnpkg/berry/issues/2212) 文件, 在工程根目录新建一个空的.
+```
 
-- babel
+- [install npm](https://tdtc-hrb.github.io/csdn/post/nodejs-ubuntu/)
+
+### babel
 ```
 yarn add @babel/core --dev
 yarn add @babel/preset-env --dev
 ```
 
-- sass    
-管理 JQuery && Bootstrap
-
-- webpack
+### webpack
 ```
 yarn add webpack --dev
 yarn add webpack-cli --dev
 yarn add webpack-notifier --dev
 ```
+- webpack bridge
 ```
 yarn add @symfony/webpack-encore --dev
 ```
 
-
 ### Sass
+管理 JQuery && Bootstrap
 ```
 yarn add sass --dev
 yarn add sass-loader
@@ -68,15 +68,15 @@ assets/controllers/*
 - webpack.config.js
 ```
 // enables Sass/SCSS support
-    .enableSassLoader()
+.enableSassLoader()
 ```
 
+### User config
 - app.scss
 add app.scss file of assets/styles
 ```
 @import "~bootstrap/scss/bootstrap";
 ```
-
 - app.js
 import it at app.js:
 ```
