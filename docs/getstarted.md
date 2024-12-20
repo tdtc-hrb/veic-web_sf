@@ -4,11 +4,15 @@ Begin build on Symfony
 
 # Prepare
 - Composer
-- php-xml
-- Symfony Cli
+- Php Modules
 
-
-## [Installing composer in Linux](https://www.transip.eu/knowledgebase/entry/3300-installing-composer-in-linux/)
+## Composer
+add repository:
+```
+sudo add-apt-repository ppa:ondrej/php # Press enter when prompted.
+sudo apt update
+```
+### [Installing composer in Linux](https://www.transip.eu/knowledgebase/entry/3300-installing-composer-in-linux/)
 In addition to the basics that come with installing PHP, 
 Composer requires php-cli php-zip wget and unip.    
 You install these as follows (often they will be installed already if you've installed PHP):
@@ -29,29 +33,26 @@ sudo rm composer-setup.php
 ```
 
 ### specific php version
-According to the latest version:
+see versions:
 ```
-sudo add-apt-repository ppa:ondrej/php # Press enter when prompted.
-sudo apt update
+sudo update-alternatives --config php
 ```
 specifically choose the [PHP version](https://askubuntu.com/questions/1373755/how-to-change-php-version-in-ubuntu-20-04-console):
 ```
 sudo update-alternatives --set php /usr/bin/php8.3
 ```
-Set the version to use [php8.3](https://php.watch/articles/install-php82-ubuntu-debian):
+
+## Php modules
+- Symfony cli
+- xml
+- pdo
+
+[list](https://computingforgeeks.com/how-to-install-php-8-2-on-ubuntu/):
 ```
-sudo apt install php8.3-cli php8.3-{zip,curl,mbstring,intl}
+php -m
 ```
 
-## php-xml
-Q: symfony/framework-bundle[v6.4.0, ..., v6.4.8] require ext-xml * -> it is missing from your system. Install or enable PHP's xml extension
-
-A: [How To Install php-xml on Ubuntu 22.04](https://installati.one/install-php-xml-ubuntu-22-04/)
-```
-sudo apt -y install php-xml
-```
-
-## [Symfony CLI](https://symfony.com/download)
+### [Symfony CLI](https://symfony.com/download)
 ```
 curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash
 
@@ -62,14 +63,27 @@ sudo apt install symfony-cli
 symfony check:requirements
 ```
 
-### [modules](https://computingforgeeks.com/how-to-install-php-8-2-on-ubuntu/)
-- list
+### php-xml
+Q: symfony/framework-bundle[v6.4.0, ..., v6.4.8] require ext-xml * -> it is missing from your system. Install or enable PHP's xml extension
+
+A: [How To Install php-xml on Ubuntu 22.04](https://installati.one/install-php-xml-ubuntu-22-04/)
 ```
-php -m
+sudo apt -y install php-xml
 ```
-- add
+
+### pdo
+- mysql
 ```
 sudo apt install php8.3-pdo-mysql
+```
+- pgsql
+```
+sudo apt install php8.3-pdo-pgsql
+```
+
+### [more lib](https://php.watch/articles/install-php82-ubuntu-debian)
+```
+sudo apt install php-{mbstring,intl}
 ```
 
 
@@ -93,6 +107,7 @@ remove:
 ```
 composer remove symfony/ux-turbo
 composer remove symfony/stimulus-bundle
+composer remove composer/semver
 composer remove symfony/asset-mapper
 ```
 
